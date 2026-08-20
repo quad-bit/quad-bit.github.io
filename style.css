@@ -1,0 +1,146 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+header{
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    /* background-color: darkgray; */
+    backdrop-filter: blur(8px);
+    color:white;
+    padding: .0rem 1.5rem;
+    border-radius: 1.0rem;
+    border-style: solid;
+    border-width: .1rem;
+    border-color: white;
+    z-index: 1000;
+}
+
+/* .logo{
+    color:white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-hover{
+    transform:scale(3.1rem);
+} */
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li a{
+    position: relative;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 5px;
+    left: 0;
+    top: 20px;
+    border-radius: 1rem;
+    transition: .3s ease-in-out;
+    background: linear-gradient(to right, rgb(23, 23, 23), rgb(179, 108, 33));
+}
+
+li a:hover::before{
+    width: 100%;
+}
+
+body {
+  background-image: radial-gradient(circle, #393838, #0a0a0a);
+  min-height: 100vh; /* Ensures the gradient stretches to fill the whole screen */
+  margin: 0;         /* Removes default browser spacing */
+}
+
+section{
+    min-height: 100vh;
+    /* padding: 0rem 12%; */
+    width: 100%;
+    position: relative;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name{
+    color: white;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+
+.col1{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    /* gap: 3rem; */
+}
+
+.col2{
+    /* transform: rotateZ(-90deg) scale(1.3); */
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    padding-top: 1rem;
+}
+
+.pic{
+    border: 4px solid rgb(215, 85, 37); 
+    border-radius: 1.2rem;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    /* z-index: 20; */
+}
+
+.graphics{
+    color: rgb(173, 41, 41);
+}
+
+.engine{
+    color: rgb(251, 82, 35);
+}
+
+.game{
+    color: rgb(246, 122, 77);
+}
+
+.gpu{
+    color: rgb(240, 183, 162);
+}
+
